@@ -3,7 +3,7 @@
         type: com.alibaba.druid.pool.DruidDataSource
         druid:
             driver-class-name: com.mysql.cj.jdbc.Driver
-            url: jdbc:mysql://test1:3306/ffcd?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+            url: jdbc:mysql://test13:3306/ffcd?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
             username: ffcd_admin
             password: ffcd_admin
             initial-size: 10
