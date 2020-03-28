@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wqfang.fanfan.source.dao.SourceDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.wqfang.fanfan.source.entity.SourceEntity" id="sourceMap">
+        <result property="id" column="id"/>
+        <result property="sourceName" column="source_name"/>
+        <result property="sourcePath" column="source_path"/>
+        <result property="sourceNameUpload" column="source_name_upload"/>
+        <result property="sourceSize" column="source_size"/>
+        <result property="sourceFileType" column="source_file_type"/>
+        <result property="sourceDownloadCount" column="source_download_count"/>
+        <result property="sourceCountLike" column="source_count_like"/>
+        <result property="sourceCountVisit" column="source_count_visit"/>
+        <result property="sourceSort" column="source_sort"/>
+        <result property="sourceSource" column="source_source"/>
+        <result property="sourceSuffixt" column="source_suffixt"/>
+        <result property="sourceType" column="source_type"/>
+        <result property="sourceCreateTime" column="source_create_time"/>
+        <result property="sourceModifyTime" column="source_modify_time"/>
+        <result property="extendTableType" column="extend_table_type"/>
+    </resultMap>
+
+
+</mapper>

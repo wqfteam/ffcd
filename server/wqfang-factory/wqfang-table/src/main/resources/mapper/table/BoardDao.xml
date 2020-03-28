@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wqfang.fanfan.table.dao.BoardDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.wqfang.fanfan.table.entity.BoardEntity" id="boardMap">
+        <result property="tableId" column="table_id"/>
+        <result property="tableName" column="table_name"/>
+        <result property="tableNum" column="table_num"/>
+        <result property="tablePeopleNum" column="table_people_num"/>
+        <result property="tableIsFlag" column="table_is_flag"/>
+        <result property="tableServiceCharge" column="table_service_charge"/>
+        <result property="tableFoodCount" column="table_food_count"/>
+        <result property="tableMinCharge" column="table_min_charge"/>
+        <result property="tableStatus" column="table_status"/>
+        <result property="extendsTableType" column="extends_table_type"/>
+        <result property="createTime" column="create_time"/>
+        <result property="modifyTime" column="modify_time"/>
+    </resultMap>
+
+
+</mapper>

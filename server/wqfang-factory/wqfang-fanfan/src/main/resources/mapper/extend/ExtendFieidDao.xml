@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wqfang.fanfan.extend.dao.ExtendFieidDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.wqfang.fanfan.extend.entity.ExtendFieidEntity" id="extendFieidMap">
+        <result property="id" column="id"/>
+        <result property="fieid" column="fieId"/>
+        <result property="fieidTitle" column="fieId_title"/>
+        <result property="fieidType" column="fieId_type"/>
+        <result property="fieidVal" column="fieId_val"/>
+    </resultMap>
+
+
+</mapper>

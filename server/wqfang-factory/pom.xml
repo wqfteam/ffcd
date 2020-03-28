@@ -11,6 +11,8 @@
 		<module>wqfang-system</module>
 		<module>wqfang-common</module>
 		<module>wqfang-web</module>
+		<module>wqfang-fanfan</module>
+		<module>wqfang-table</module>
 	</modules>
     <packaging>pom</packaging>
 	<description>wqfang-factory</description>
