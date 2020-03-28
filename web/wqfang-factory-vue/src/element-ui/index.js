@@ -76,6 +76,7 @@ import {
   MessageBox,
   Message,
   Link,
+  PageHeader,
   Notification
 } from 'element-ui'
 
@@ -144,6 +145,7 @@ Vue.use(Main)
 Vue.use(Footer)
 Vue.use(Link)
 Vue.use(Loading.directive)
+Vue.use(PageHeader)
 
 Vue.prototype.$loading = Loading.service
 Vue.prototype.$msgbox = MessageBox
