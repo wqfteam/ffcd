@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wqfang.modules.product.dao.FctExtendAgreementDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.wqfang.modules.product.entity.FctExtendAgreementEntity" id="fctExtendAgreementMap">
+        <result property="id" column="id"/>
+        <result property="productFctBaseId" column="product_fct_base_id"/>
+        <result property="operateType" column="operate_type"/>
+        <result property="registerAddress" column="register_address"/>
+        <result property="originalDataType" column="original_data_type"/>
+        <result property="rangeStart" column="range_start"/>
+        <result property="rangeEnd" column="range_end"/>
+        <result property="dataGetType" column="data_get_type"/>
+        <result property="swapHighByte" column="swap_high_byte"/>
+        <result property="swapRegisterSort" column="swap_register_sort"/>
+        <result property="zoom" column="zoom"/>
+    </resultMap>
+
+
+</mapper>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wqfang.modules.product.dao.DeviceBaseDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.wqfang.modules.product.entity.DeviceBaseEntity" id="deviceBaseMap">
+        <result property="id" column="id"/>
+        <result property="productBaseCode" column="product_base_code"/>
+        <result property="deviceName" column="device_name"/>
+        <result property="deviceOnlineTime" column="device_online_time"/>
+        <result property="deviceStatus" column="device_status"/>
+        <result property="createUserId" column="create_user_id"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateUserId" column="update_user_id"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="flag" column="flag"/>
+        <association property="baseEntity" javaType="com.wqfang.modules.product.entity.BaseEntity">
+            <result property="productName" column="product_name"/>
+        </association>
+    </resultMap>
+
+    <select id="selectPage" resultMap="deviceBaseMap">
+        select * from product_device_base d
+        left join product_base p on d.product_base_code=p.id
+    </select>
+    <select id="selectById" resultMap="deviceBaseMap">
+        select * from product_device_base d
+        left join product_base p on d.product_base_code=p.id
+    </select>
+
+</mapper>
